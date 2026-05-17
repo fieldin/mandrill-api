@@ -1,21 +1,18 @@
 {
-    "name": "macroactive/mandrill",
+    "name": "mandrill/mandrill",
     "type": "library",
-    "description": "Unofficial API client library for the Mandrill email as a service platform. Based on https://bitbucket.org/mailchimp/mandrill-api-php",
+    "version": "1.0.55",
+    "description": "API client library for the Mandrill email as a service platform",
     "keywords": ["email", "api"],
-    "homepage": "https://github.com/macroactive-io/mandrill-api",
+    "homepage": "https://github.com/fieldin/mandrill-api",
     "license": "Apache-2.0",
-    "authors": [
-        {"name": "Mandrill Devs", "email": "community@mandrill.com", "homepage": "http://mandrill.com", "role": "Developer"},
-        {"name":  "Community devs", "homepage": "https://github.com/macroactive-io/mandrill-api/graphs/contributors"}
-    ],
+    "authors": [{"name": "Mandrill Devs", "email": "community@mandrill.com", "homepage": "http://mandrill.com", "role": "Developer"}],
     "require": {
-        "php": ">=7.4.0"
+        "php": ">=5.2.0"
     },
     "autoload": {
-        "classmap": ["src/Mandrill", "src/Mandrill.php"]
-    },
-    "replace": {
-        "mandrill/mandrill": ">=1.0.55"
+        "psr-0": {
+            "Mandrill": "src/"
+        }
     }
 }
